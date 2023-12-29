@@ -13,9 +13,12 @@ export class SignComponent {
     password: ['', [Validators.required]]
   })
 
-  constructor(private formBuilder: FormBuilder) {
-
-  };
-
+  constructor(private formBuilder: FormBuilder) {  };
+  
+    public submitForm(){
+      if(this.formAuth.valid){
+        console.log(this.formAuth)
+      }
+    }
 
 }
