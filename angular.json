@@ -65,10 +65,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "auth-front:build:production"
+              "buildTarget": "auth-front:build:production"
             },
             "development": {
-              "browserTarget": "auth-front:build:development"
+              "buildTarget": "auth-front:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -76,7 +76,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "auth-front:build"
+            "buildTarget": "auth-front:build"
           }
         },
         "test": {
@@ -100,5 +100,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "d938452a-2223-4847-adf0-3ba8a0568cd3"
   }
 }
